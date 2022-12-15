@@ -1,0 +1,1171 @@
+{
+  "name": "AdvWorks_14-12-2022",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-IN",
+    "dataSources": [
+      {
+        "name": "SqlServer DESKTOP-121NOQR AdventureWorksDW2019",
+        "connectionString": "Provider=SQLNCLI11;Data Source=DESKTOP-121NOQR;Integrated Security=SSPI;Persist Security Info=false;Initial Catalog=AdventureWorksDW2019",
+        "impersonationMode": "impersonateAccount",
+        "account": "DESKTOP-121NOQR\\Ramyasri",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "Sales",
+        "columns": [
+          {
+            "name": "ProductKey",
+            "dataType": "int64",
+            "sourceColumn": "ProductKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "OrderDateKey",
+            "dataType": "int64",
+            "sourceColumn": "OrderDateKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "DueDateKey",
+            "dataType": "int64",
+            "sourceColumn": "DueDateKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ShipDateKey",
+            "dataType": "int64",
+            "sourceColumn": "ShipDateKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "PromotionKey",
+            "dataType": "int64",
+            "sourceColumn": "PromotionKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CurrencyKey",
+            "dataType": "int64",
+            "sourceColumn": "CurrencyKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "SalesTerritoryKey",
+            "dataType": "int64",
+            "sourceColumn": "SalesTerritoryKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "SalesOrderNumber",
+            "dataType": "string",
+            "sourceColumn": "SalesOrderNumber",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SalesOrderLineNumber",
+            "dataType": "int64",
+            "sourceColumn": "SalesOrderLineNumber",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "RevisionNumber",
+            "dataType": "int64",
+            "sourceColumn": "RevisionNumber",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "OrderQuantity",
+            "dataType": "int64",
+            "sourceColumn": "OrderQuantity",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "UnitPrice",
+            "dataType": "decimal",
+            "sourceColumn": "UnitPrice",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "ExtendedAmount",
+            "dataType": "decimal",
+            "sourceColumn": "ExtendedAmount",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "UnitPriceDiscountPct",
+            "dataType": "double",
+            "sourceColumn": "UnitPriceDiscountPct",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "DiscountAmount",
+            "dataType": "double",
+            "sourceColumn": "DiscountAmount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "ProductStandardCost",
+            "dataType": "decimal",
+            "sourceColumn": "ProductStandardCost",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "TotalProductCost",
+            "dataType": "decimal",
+            "sourceColumn": "TotalProductCost",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "SalesAmount",
+            "dataType": "decimal",
+            "sourceColumn": "SalesAmount",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "TaxAmt",
+            "dataType": "decimal",
+            "sourceColumn": "TaxAmt",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Freight",
+            "dataType": "decimal",
+            "sourceColumn": "Freight",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "CarrierTrackingNumber",
+            "dataType": "string",
+            "sourceColumn": "CarrierTrackingNumber",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "CustomerPONumber",
+            "dataType": "string",
+            "sourceColumn": "CustomerPONumber",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "OrderDate",
+            "dataType": "dateTime",
+            "sourceColumn": "OrderDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "DueDate",
+            "dataType": "dateTime",
+            "sourceColumn": "DueDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "ShipDate",
+            "dataType": "dateTime",
+            "sourceColumn": "ShipDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactInternetSales",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[FactInternetSales].* FROM [dbo].[FactInternetSales] ",
+              "dataSource": "SqlServer DESKTOP-121NOQR AdventureWorksDW2019"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Count of OrderQuantity",
+            "expression": "COUNTA([OrderQuantity])"
+          },
+          {
+            "name": "Sum of UnitPrice",
+            "expression": "SUM(([UnitPrice]))",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Average of UnitPrice",
+            "expression": "AVERAGE([UnitPrice])",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Sum of ProductStandardCost",
+            "expression": "SUM([ProductStandardCost])",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Sum of SalesAmount",
+            "expression": "SUM([SalesAmount])",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Average of SalesAmount",
+            "expression": "AVERAGE([SalesAmount])",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Sum of TaxAmt",
+            "expression": "SUM([TaxAmt])",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Average of TaxAmt",
+            "expression": "AVERAGE([TaxAmt])",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Sum of Freight",
+            "expression": "SUM([Freight])",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Average of Freight",
+            "expression": "AVERAGE([Freight])",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[FactInternetSales].* FROM [dbo].[FactInternetSales] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "FactInternetSales"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Currency",
+        "columns": [
+          {
+            "name": "CurrencyKey",
+            "dataType": "int64",
+            "sourceColumn": "CurrencyKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CurrencyAlternateKey",
+            "dataType": "string",
+            "sourceColumn": "CurrencyAlternateKey",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "CurrencyName",
+            "dataType": "string",
+            "sourceColumn": "CurrencyName",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCurrency",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[DimCurrency].* FROM [dbo].[DimCurrency] ",
+              "dataSource": "SqlServer DESKTOP-121NOQR AdventureWorksDW2019"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[DimCurrency].* FROM [dbo].[DimCurrency] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimCurrency"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Customer",
+        "columns": [
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "GeographyKey",
+            "dataType": "int64",
+            "sourceColumn": "GeographyKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CustomerAlternateKey",
+            "dataType": "string",
+            "sourceColumn": "CustomerAlternateKey",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Title",
+            "dataType": "string",
+            "sourceColumn": "Title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "FirstName",
+            "dataType": "string",
+            "sourceColumn": "FirstName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "MiddleName",
+            "dataType": "string",
+            "sourceColumn": "MiddleName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "LastName",
+            "dataType": "string",
+            "sourceColumn": "LastName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "NameStyle",
+            "dataType": "boolean",
+            "sourceColumn": "NameStyle",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "BirthDate",
+            "dataType": "dateTime",
+            "sourceColumn": "BirthDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "MaritalStatus",
+            "dataType": "string",
+            "sourceColumn": "MaritalStatus",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Suffix",
+            "dataType": "string",
+            "sourceColumn": "Suffix",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Gender",
+            "dataType": "string",
+            "sourceColumn": "Gender",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EmailAddress",
+            "dataType": "string",
+            "sourceColumn": "EmailAddress",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "YearlyIncome",
+            "dataType": "decimal",
+            "sourceColumn": "YearlyIncome",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "TotalChildren",
+            "dataType": "int64",
+            "sourceColumn": "TotalChildren",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "NumberChildrenAtHome",
+            "dataType": "int64",
+            "sourceColumn": "NumberChildrenAtHome",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "EnglishEducation",
+            "dataType": "string",
+            "sourceColumn": "EnglishEducation",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SpanishEducation",
+            "dataType": "string",
+            "sourceColumn": "SpanishEducation",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "FrenchEducation",
+            "dataType": "string",
+            "sourceColumn": "FrenchEducation",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EnglishOccupation",
+            "dataType": "string",
+            "sourceColumn": "EnglishOccupation",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SpanishOccupation",
+            "dataType": "string",
+            "sourceColumn": "SpanishOccupation",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "FrenchOccupation",
+            "dataType": "string",
+            "sourceColumn": "FrenchOccupation",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "HouseOwnerFlag",
+            "dataType": "string",
+            "sourceColumn": "HouseOwnerFlag",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "NumberCarsOwned",
+            "dataType": "int64",
+            "sourceColumn": "NumberCarsOwned",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "AddressLine1",
+            "dataType": "string",
+            "sourceColumn": "AddressLine1",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "AddressLine2",
+            "dataType": "string",
+            "sourceColumn": "AddressLine2",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Phone",
+            "dataType": "string",
+            "sourceColumn": "Phone",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "DateFirstPurchase",
+            "dataType": "dateTime",
+            "sourceColumn": "DateFirstPurchase",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "CommuteDistance",
+            "dataType": "string",
+            "sourceColumn": "CommuteDistance",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCustomer",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[DimCustomer].* FROM [dbo].[DimCustomer] ",
+              "dataSource": "SqlServer DESKTOP-121NOQR AdventureWorksDW2019"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[DimCustomer].* FROM [dbo].[DimCustomer] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimCustomer"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "columns": [
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "FullDateAlternateKey",
+            "dataType": "dateTime",
+            "sourceColumn": "FullDateAlternateKey",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "DayNumberOfWeek",
+            "dataType": "int64",
+            "sourceColumn": "DayNumberOfWeek",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "EnglishDayNameOfWeek",
+            "dataType": "string",
+            "sourceColumn": "EnglishDayNameOfWeek",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SpanishDayNameOfWeek",
+            "dataType": "string",
+            "sourceColumn": "SpanishDayNameOfWeek",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "FrenchDayNameOfWeek",
+            "dataType": "string",
+            "sourceColumn": "FrenchDayNameOfWeek",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "DayNumberOfMonth",
+            "dataType": "int64",
+            "sourceColumn": "DayNumberOfMonth",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "DayNumberOfYear",
+            "dataType": "int64",
+            "sourceColumn": "DayNumberOfYear",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "WeekNumberOfYear",
+            "dataType": "int64",
+            "sourceColumn": "WeekNumberOfYear",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "EnglishMonthName",
+            "dataType": "string",
+            "sourceColumn": "EnglishMonthName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SpanishMonthName",
+            "dataType": "string",
+            "sourceColumn": "SpanishMonthName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "FrenchMonthName",
+            "dataType": "string",
+            "sourceColumn": "FrenchMonthName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "MonthNumberOfYear",
+            "dataType": "int64",
+            "sourceColumn": "MonthNumberOfYear",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "CalendarQuarter",
+            "dataType": "int64",
+            "sourceColumn": "CalendarQuarter",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "CalendarYear",
+            "dataType": "int64",
+            "sourceColumn": "CalendarYear",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "CalendarSemester",
+            "dataType": "int64",
+            "sourceColumn": "CalendarSemester",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "FiscalQuarter",
+            "dataType": "int64",
+            "sourceColumn": "FiscalQuarter",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "FiscalYear",
+            "dataType": "int64",
+            "sourceColumn": "FiscalYear",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "FiscalSemester",
+            "dataType": "int64",
+            "sourceColumn": "FiscalSemester",
+            "sourceProviderType": "UnsignedTinyInt"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimDate",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[DimDate].* FROM [dbo].[DimDate] ",
+              "dataSource": "SqlServer DESKTOP-121NOQR AdventureWorksDW2019"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[DimDate].* FROM [dbo].[DimDate] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimDate"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Promotion",
+        "columns": [
+          {
+            "name": "PromotionKey",
+            "dataType": "int64",
+            "sourceColumn": "PromotionKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "PromotionAlternateKey",
+            "dataType": "int64",
+            "sourceColumn": "PromotionAlternateKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "EnglishPromotionName",
+            "dataType": "string",
+            "sourceColumn": "EnglishPromotionName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SpanishPromotionName",
+            "dataType": "string",
+            "sourceColumn": "SpanishPromotionName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "FrenchPromotionName",
+            "dataType": "string",
+            "sourceColumn": "FrenchPromotionName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "DiscountPct",
+            "dataType": "double",
+            "sourceColumn": "DiscountPct",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "EnglishPromotionType",
+            "dataType": "string",
+            "sourceColumn": "EnglishPromotionType",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SpanishPromotionType",
+            "dataType": "string",
+            "sourceColumn": "SpanishPromotionType",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "FrenchPromotionType",
+            "dataType": "string",
+            "sourceColumn": "FrenchPromotionType",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EnglishPromotionCategory",
+            "dataType": "string",
+            "sourceColumn": "EnglishPromotionCategory",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SpanishPromotionCategory",
+            "dataType": "string",
+            "sourceColumn": "SpanishPromotionCategory",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "FrenchPromotionCategory",
+            "dataType": "string",
+            "sourceColumn": "FrenchPromotionCategory",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "StartDate",
+            "dataType": "dateTime",
+            "sourceColumn": "StartDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "EndDate",
+            "dataType": "dateTime",
+            "sourceColumn": "EndDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "MinQty",
+            "dataType": "int64",
+            "sourceColumn": "MinQty",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "MaxQty",
+            "dataType": "int64",
+            "sourceColumn": "MaxQty",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimPromotion",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[DimPromotion].* FROM [dbo].[DimPromotion] ",
+              "dataSource": "SqlServer DESKTOP-121NOQR AdventureWorksDW2019"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[DimPromotion].* FROM [dbo].[DimPromotion] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimPromotion"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "SalesTerritory",
+        "columns": [
+          {
+            "name": "SalesTerritoryKey",
+            "dataType": "int64",
+            "sourceColumn": "SalesTerritoryKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "SalesTerritoryAlternateKey",
+            "dataType": "int64",
+            "sourceColumn": "SalesTerritoryAlternateKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "SalesTerritoryRegion",
+            "dataType": "string",
+            "sourceColumn": "SalesTerritoryRegion",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SalesTerritoryCountry",
+            "dataType": "string",
+            "sourceColumn": "SalesTerritoryCountry",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SalesTerritoryGroup",
+            "dataType": "string",
+            "sourceColumn": "SalesTerritoryGroup",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimSalesTerritory",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[DimSalesTerritory].* FROM [dbo].[DimSalesTerritory] ",
+              "dataSource": "SqlServer DESKTOP-121NOQR AdventureWorksDW2019"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[DimSalesTerritory].* FROM [dbo].[DimSalesTerritory] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimSalesTerritory"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Customer_View",
+        "columns": [
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "GeographyKey",
+            "dataType": "int64",
+            "sourceColumn": "GeographyKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "FullName",
+            "dataType": "string",
+            "sourceColumn": "FullName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "BirthDate",
+            "dataType": "dateTime",
+            "sourceColumn": "BirthDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "Gender",
+            "dataType": "string",
+            "sourceColumn": "Gender",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EmailAddress",
+            "dataType": "string",
+            "sourceColumn": "EmailAddress",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "YearlyIncome",
+            "dataType": "decimal",
+            "sourceColumn": "YearlyIncome",
+            "formatString": "\"₹\" #,0.00;#,0.00 -\"₹\";\"₹\" #,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16393\" DisplayName=\"₹ English (India)\" Symbol=\"₹\" PositivePattern=\"2\" NegativePattern=\"12\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Address",
+            "dataType": "string",
+            "sourceColumn": "Address",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_Customer",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[vw_Customer].* FROM [dbo].[vw_Customer] ",
+              "dataSource": "SqlServer DESKTOP-121NOQR AdventureWorksDW2019"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[vw_Customer].* FROM [dbo].[vw_Customer] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "vw_Customer"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Product_View",
+        "columns": [
+          {
+            "name": "ProductKey",
+            "dataType": "int64",
+            "sourceColumn": "ProductKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "EnglishProductName",
+            "dataType": "string",
+            "sourceColumn": "EnglishProductName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Color",
+            "dataType": "string",
+            "sourceColumn": "Color",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "StartDate",
+            "dataType": "dateTime",
+            "sourceColumn": "StartDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "ProductCategoryName",
+            "dataType": "string",
+            "sourceColumn": "ProductCategoryName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "ProductSubcategoryName",
+            "dataType": "string",
+            "sourceColumn": "ProductSubcategoryName",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_Product",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[vw_Product].* FROM [dbo].[vw_Product] ",
+              "dataSource": "SqlServer DESKTOP-121NOQR AdventureWorksDW2019"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[vw_Product].* FROM [dbo].[vw_Product] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "vw_Product"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "1bb497b8-9cf8-4f0a-a80a-dc2b9a875bc5",
+        "fromTable": "Sales",
+        "fromColumn": "ProductKey",
+        "toTable": "Product_View",
+        "toColumn": "ProductKey"
+      },
+      {
+        "name": "582aca87-f75c-4674-8244-0797d8b00fae",
+        "fromTable": "Sales",
+        "fromColumn": "CustomerKey",
+        "toTable": "Customer_View",
+        "toColumn": "CustomerKey"
+      },
+      {
+        "name": "d3143785-a63c-4b62-a57c-c144c567c454",
+        "fromTable": "Sales",
+        "fromColumn": "SalesTerritoryKey",
+        "toTable": "SalesTerritory",
+        "toColumn": "SalesTerritoryKey"
+      },
+      {
+        "name": "cb17e178-99e6-45fd-b341-f2a3bf9b02f5",
+        "fromTable": "Sales",
+        "fromColumn": "CurrencyKey",
+        "toTable": "Currency",
+        "toColumn": "CurrencyKey"
+      },
+      {
+        "name": "c3ba0a7a-1d5d-4513-bff2-1aef9a8b589c",
+        "fromTable": "Sales",
+        "fromColumn": "PromotionKey",
+        "toTable": "Promotion",
+        "toColumn": "PromotionKey"
+      },
+      {
+        "name": "c74e63dc-114c-4fd1-9031-6d9fdf1cef8b",
+        "fromTable": "Sales",
+        "fromColumn": "OrderDateKey",
+        "toTable": "Date",
+        "toColumn": "DateKey"
+      },
+      {
+        "name": "a91397c6-d50e-4a9f-9371-d030bae784d6",
+        "fromTable": "Sales",
+        "fromColumn": "CustomerKey",
+        "toTable": "Customer",
+        "toColumn": "CustomerKey"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+C:\Users\Ramyasri\source\repos\AdvWorks_14-12-2022\AdvWorks_14-12-2022\bin\Model.asdatabase
+C:\Users\Ramyasri\source\repos\AdvWorks_14-12-2022\AdvWorks_14-12-2022\bin\Model.deploymenttargets
+C:\Users\Ramyasri\source\repos\AdvWorks_14-12-2022\AdvWorks_14-12-2022\bin\Model.deploymentoptions
+C:\Users\Ramyasri\source\repos\AdvWorks_14-12-2022\AdvWorks_14-12-2022\obj\Development\AdvWorks_14-12-2022.smproj.CoreCompileInputs.cache
+C:\Users\Ramyasri\source\repos\AdvWorks_14-12-2022\AdvWorks_14-12-2022\obj\Development\Model.asdatabase
+C:\Users\Ramyasri\source\repos\AdvWorks_14-12-2022\AdvWorks_14-12-2022\obj\Development\Model.deploymentoptions
+C:\Users\Ramyasri\source\repos\AdvWorks_14-12-2022\AdvWorks_14-12-2022\obj\Development\Model.deploymenttargets
